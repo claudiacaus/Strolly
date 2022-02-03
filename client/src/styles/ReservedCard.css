@@ -1,0 +1,65 @@
+.reserved-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 550px;
+  box-shadow: var(--box-shadow-color);
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.img-card-c {
+  display: flex;
+}
+
+.img-card-c > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.img-card-c {
+  max-width: 400px;
+  object-fit: contain;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.reserved-card-t-p > h2 {
+  padding-top: 0.8rem;
+}
+
+.reserved-card-t-p > p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.reserved-card-t-p {
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .reserved-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "img-card-c h2-card "
+      ". p-price";
+  }
+
+  .reserved-card :nth-child(1) {
+    order: 2;
+  }
+
+  .reserved-card :nth-child(2) {
+    order: 1;
+  }
+
+  .img-card-c {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0;
+  }
+}

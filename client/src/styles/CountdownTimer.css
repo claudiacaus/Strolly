@@ -1,0 +1,18 @@
+.timer-container {
+  margin-bottom: 1.2rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-container > h1 {
+  margin-bottom: 1.5rem;
+}
+
+.timer-container > p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}

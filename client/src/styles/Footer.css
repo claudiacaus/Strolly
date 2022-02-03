@@ -1,0 +1,111 @@
+.main-footer {
+  color: white;
+  background-color: var(--blue-dark-color);
+  padding: 2em calc((100% - var(--container-width-dt)) / 2);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem;
+  position: relative;
+  line-height: 1.6;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  height: var(--footer-height-dt);
+}
+
+.footer-ul {
+  list-style-type: none;
+  padding: 0;
+
+  align-items: flex-end;
+}
+
+.footer-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.col-sm {
+  font-size: 0.9rem;
+  color: rgb(141, 140, 140);
+}
+
+h4 {
+  color: var(--orange-color);
+}
+.bi-suit-heart {
+  color: var(--orange-color);
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--orange-color);
+  align-items: center;
+  gap: 1rem;
+  height: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-row-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-items: space-around;
+  align-items: center;
+  gap: 1rem;
+  height: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  width: 1rem;
+  padding-top: 15px;
+}
+
+.social-icon:link {
+  color: var(--orange-color);
+}
+
+.social-icon:visited {
+  color: var(--orange-color);
+}
+
+.social-icon:hover {
+  color: var(--blue-light-color);
+}
+
+.social-icon:active {
+  color: var(--orange-color);
+}
+
+.social-icon:focus {
+  color: var(--orange-color);
+}
+
+@media screen and (max-width: 830px) {
+  .main-footer {
+    padding: 2em calc((100% - var(--container-width-mb)) / 2);
+    font-size: 0.9rem;
+    height: var(--footer-height-tb);
+    line-height: 1.6;
+  }
+  .col-sm {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main-footer {
+    padding: 2em calc((100% - var(--container-width-mb)) / 2);
+    font-size: 0.9rem;
+    height: var(--footer-height-mb);
+    line-height: 1.6;
+  }
+  .col-sm {
+    font-size: 0.8rem;
+  }
+  .footer-column:nth-of-type(2n) {
+    padding-left: 0.5rem;
+  }
+}

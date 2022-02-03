@@ -1,0 +1,36 @@
+.about-main {
+  height: calc(100vh - 200px);
+}
+
+.students-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.student > img {
+  width: 150px;
+}
+
+.student {
+  margin: 10px;
+}
+
+.student > p {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.student {
+  color: black;
+}
+
+.student:visited {
+  color: black;
+}
+.student:hover {
+  color: var(--blue-color);
+}

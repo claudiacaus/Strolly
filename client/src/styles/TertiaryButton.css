@@ -1,0 +1,27 @@
+.tertiary-button {
+  display: block;
+  padding: 0 12px;
+  height: 40px;
+  border-radius: 8px;
+  border-style: none;
+  background-color: var(--blue-color);
+  color: white;
+  font-size: 13pt;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  cursor: pointer;
+  font-family: var(--button-font-family);
+  margin: 0 auto;
+}
+
+.tertiary-button:hover {
+  background-color: var(--blue-light-color);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.tertiary-button:active {
+  background-color: var(--blue-dark-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}

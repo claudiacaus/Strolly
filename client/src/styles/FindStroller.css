@@ -1,0 +1,257 @@
+.findStroller-result-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.findStroller-result-list > li {
+  padding: 0.5rem;
+  width: 25%;
+  flex-shrink: 0;
+  list-style: none;
+}
+
+.findStroller-card-container {
+  min-width: 100%;
+  box-shadow: var(--box-shadow-color);
+  height: fit-content;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.findStroller-card-info {
+  margin: auto;
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+}
+
+.findStroller-card-info > div > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.findStroller-card-info h2 {
+  padding-top: 8px;
+  font-size: 22px;
+}
+
+.findStroller-type-info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.button-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.find-Strollers-header {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.select-city-name-container {
+  width: 65%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.select-city-name {
+  width: 100%;
+  text-align: center;
+  font-size: 14pt;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: var(--button-font-family);
+}
+
+.prices > p {
+  font-size: 1.1rem;
+}
+
+.img-card {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  margin-bottom: 5px;
+}
+
+.h3-description {
+  color: var(--blue-color);
+  padding-bottom: 3px;
+}
+
+.h3-description:hover {
+  color: var(--blue-dark-color);
+}
+
+.s-available {
+  padding-bottom: 3px;
+}
+
+.h2-address {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.h2-address > span {
+  color: var(--blue-color);
+}
+
+@media screen and (max-width: 600px) {
+  .h2-address {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  .findStroller-result-list > li {
+    flex: 100%;
+    padding: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .select-city-name-container {
+    width: 100%;
+  }
+
+  .findStroller-card-container {
+    height: 180px;
+  }
+
+  .findStroller-type-info {
+    display: flex;
+    width: 200px;
+  }
+
+  .h3-description {
+    font-size: 0.9rem;
+  }
+  .findStroller-card-info > div > img:nth-of-type(1) {
+    max-height: 106px;
+    width: auto;
+  }
+
+  .findStroller-card-info .img-control {
+    height: 104px;
+    width: auto;
+  }
+
+  .prices p {
+    font-size: 0.9rem;
+  }
+
+  .findStroller-card-info {
+    display: inline;
+    display: grid;
+    height: 225px;
+    align-content: center;
+    padding-bottom: 3rem;
+    min-height: 140px;
+    background-color: rgb(250, 250, 250);
+    row-gap: 0.2rem;
+    position: relative;
+    grid-template-areas:
+      "title title title title"
+      "s-available s-available s-available s-available"
+      "image  findStroller-type-info findStroller-type-info findStroller-type-info";
+  }
+
+  .findStroller-card-info h2 {
+    grid-area: title;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 3px;
+  }
+
+  .findStroller-card-info h4 {
+    font-size: 0.9rem;
+    margin: 0 auto;
+  }
+
+  .findStroller-card-info img {
+    border-radius: 10px !important;
+    box-shadow: var(--box-shadow-color);
+  }
+
+  .s-available {
+    font-size: 1rem;
+    grid-area: s-available;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 599px) {
+  .findStroller-type-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    width: 200px;
+    align-content: right;
+    margin-left: 10px;
+  }
+
+  .img-control {
+    margin-bottom: 10px;
+  }
+
+  .s-prices > p {
+    font-size: 1rem;
+  }
+
+  .h3-description {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 430px) {
+  .findStroller-type-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 220px;
+    align-content: right;
+    margin-left: 10px;
+  }
+
+  .img-control {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .findStroller-result-list > li {
+    flex: 0 0 46%;
+    padding: 0;
+    margin: 5px;
+  }
+
+  .findStroller-card-info img {
+    border-radius: 0px !important;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+  .findStroller-result-list > li {
+    flex: 0 0 33%;
+  }
+}

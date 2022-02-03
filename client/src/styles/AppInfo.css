@@ -1,0 +1,120 @@
+.icon-image {
+  width: 100px;
+  margin: auto;
+}
+
+p {
+  font-size: 19.5px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+}
+
+.app-info {
+  margin-top: 3rem;
+  max-width: 100%;
+  margin: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--background-light-blue);
+}
+
+.family-pic {
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+.family-pic-image {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+.group {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.app-info-text {
+  font-size: 20px;
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 894px) {
+  .app-info {
+    padding: 0;
+  }
+
+  .app-info-content {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+  }
+
+  .how-it-works-container {
+    width: 50%;
+  }
+
+  .app-info-text {
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .grid-app-info-container {
+    display: grid;
+    grid-gap: 1.5rem;
+    width: 100%;
+    max-height: 1300px;
+    line-height: 1.4;
+  }
+
+  .family-pic {
+    justify-content: flex-end;
+    margin: auto;
+    width: 50%;
+  }
+
+  .icon-image {
+    width: 110px;
+    margin: auto;
+  }
+
+  .family-pic-image {
+    display: block;
+    width: 80%;
+    margin: 0;
+  }
+
+  .group {
+    grid-template-columns: 1fr 2fr;
+    margin: auto;
+    margin-top: 1rem;
+    display: grid;
+    max-width: 100%;
+  }
+
+  .group-reverse {
+    grid-template-columns: 2fr 1fr;
+  }
+  .group-reverse .icon-image {
+    order: 2;
+  }
+  .group-reverse .app-info-text {
+    order: 1;
+  }
+  /* }
+
+@media only screen and (min-device-width: 894px) and (max-device-width: 1146px) { */
+}

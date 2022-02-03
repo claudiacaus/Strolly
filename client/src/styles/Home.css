@@ -1,0 +1,18 @@
+.first-h1 {
+  font-size: 27px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.family-photo {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .first-h1 {
+    font-size: 18px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,95 @@
+/* this css copied from codepen and modified to be only css => https://codepen.io/petsto/pen/XaZRGZ */
+.success-icon-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  row-gap: 20px;
+}
+
+/* Structure */
+.success-icon {
+  display: inline-block;
+  width: 8em;
+  height: 8em;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 4px solid var(--success-color);
+  position: relative;
+  overflow: hidden;
+  transform-origin: center;
+  animation: showSuccess 180ms ease-in-out;
+  transform: scale(1);
+  margin-bottom: 10px;
+}
+
+/* Elements */
+.success-icon-tip,
+.success-icon-long {
+  display: block;
+  position: absolute;
+  height: 4px;
+  background-color: var(--success-color);
+  border-radius: 10px;
+}
+
+.success-icon-tip {
+  width: 2.4em;
+  top: 4.3em;
+  left: 1.4em;
+  transform: rotate(45deg);
+  animation: tipInPlace 300ms ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 180ms;
+  visibility: hidden;
+}
+.success-icon-long {
+  width: 4em;
+  transform: rotate(-45deg);
+  top: 3.7em;
+  left: 2.75em;
+  animation: longInPlace 140ms ease-in-out;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  animation-delay: calc(300ms + 140ms);
+}
+
+@keyframes showSuccess {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes tipInPlace {
+  from {
+    width: 0em;
+    top: 0em;
+    left: -1.6em;
+  }
+  to {
+    width: 2.4em;
+    top: 4.3em;
+    left: 1.4em;
+    visibility: visible;
+  }
+}
+
+@keyframes longInPlace {
+  from {
+    width: 0em;
+    top: 5.1em;
+    left: 3.2em;
+  }
+  to {
+    width: 4em;
+    top: 3.7em;
+    left: 2.75em;
+    visibility: visible;
+  }
+}

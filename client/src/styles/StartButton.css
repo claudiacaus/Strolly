@@ -1,0 +1,18 @@
+.start-button {
+  padding: 0.5rem 5rem;
+  margin: auto;
+  background-color: var(--button-primary-color);
+  border-radius: 15px;
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.start-button-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}

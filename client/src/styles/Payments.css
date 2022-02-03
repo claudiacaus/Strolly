@@ -1,0 +1,15 @@
+.payment-form-container {
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.payment-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.payment-form > .loader {
+  align-self: center;
+}

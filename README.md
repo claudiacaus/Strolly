@@ -127,3 +127,15 @@ For more information on how these work together including the automatic deployme
 - `mongodb-memory-server` || To mock out our database in our backend tests. See [docs](https://github.com/nodkz/mongodb-memory-server)
 - `cors` || To open up our API. See [docs](https://github.com/expressjs/cors#readme)
 - `mongoose` || To add schemas to our database. See [docs](https://mongoosejs.com/)
+
+
+![made-with-react](https://user-images.githubusercontent.com/55986532/155530133-56b7eaf1-92c5-4395-a0ad-e92805dbce2a.svg)
+![made-with-javascript](https://user-images.githubusercontent.com/55986532/155530136-03972f18-74a2-47a4-97ea-876411c2ee4a.svg)
+![made-with-css](https://user-images.githubusercontent.com/55986532/155530124-ef2d21d9-5399-498e-b2fa-2b34ae66cd59.svg)
+![made-with-node](https://user-images.githubusercontent.com/55986532/155530126-566f9792-3dc5-4030-8660-aab93671a417.svg)
+![made-with-google-maps-api](https://user-images.githubusercontent.com/55986532/155530129-44b98ffa-2c44-4be7-ab7d-a6fb89a1ef0c.svg)
+![made-with-stripe](https://user-images.githubusercontent.com/55986532/155530130-ad608f2a-bc49-4c6a-95f4-459484a867ff.svg)
+![made-with-mongodb](https://user-images.githubusercontent.com/55986532/155530131-f823d366-ffdd-4284-b7a6-4a1faa52fc8f.svg)
+
+![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
+

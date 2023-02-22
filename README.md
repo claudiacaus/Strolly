@@ -17,7 +17,7 @@ This is the final project for the HackYourFuture curriculum we did as a class us
 
 Strolly is a App created to help parents or caretakers to rent a stroller in the Amsterdam, Denventer, Groningen and Den Haag area.
 
-[Click here for the Demo version](https://hyf-c33-final-project.herokuapp.com/)
+[Click here for the Demo version](https://strolly-hyf.netlify.app/)
 
 ## 1. Setup
 
